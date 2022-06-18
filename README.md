@@ -1,6 +1,6 @@
 # Texttwist Game Cheat
 
-A program that can solve Texttwist or Wordscape game. Made this program just for fun while learning Vue.js.
+A simple Vue.js application that can solve Texttwist or Wordscape game. Made this program just for fun while learning Vue.js.
 This can jumble given letters and list down the valid words out of the given letters. It can return 3-letter words up to the n-letter words where n is the maximum number of letters. This communicates to an api to validate the letter combination if it's a valid word or not.
 
 Included here the PHP scripts used for the server side (API) and also the database file that contains the dictionary words.  
