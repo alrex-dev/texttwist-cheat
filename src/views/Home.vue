@@ -5,8 +5,10 @@ import Axios from 'axios'
 <template>
   <main>
     <form name="theForm" @submit.prevent="getWords">
-      <input type="text" name="word" v-model="word" />
-      <input type="submit" name="submitButton" value=" Go " />
+      <p class="label">Enter a word or any string (max: 9 chars):</p>
+      <div>
+        <input type="text" name="word" v-model="word" /> <input type="submit" name="submitButton" value=" Twist it! " />
+      </div>
     </form>
     <br/>
     <div v-for="g in theWords" class="grp-cont">
@@ -205,6 +207,10 @@ export default {
 <style>
 body {
     font-family: 'Arial', sans-serif;
+}
+
+.label {
+    margin-bottom: 0;
 }
 
 .grp-cont {
