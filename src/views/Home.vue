@@ -83,8 +83,9 @@ export default {
               }
               
               for(let i in response.data.results) {
-                //console.log(response.data.results[i].word);
-                this.theWords[idx].push( response.data.results[i].word )
+                if (this.theWords[idx].indexOf( response.data.results[i].word ) < 0) {
+                  this.theWords[idx].push( response.data.results[i].word )
+                }
               }
               
               if (this.api_call == this.api_response) {
@@ -148,8 +149,9 @@ export default {
                   }
                   
                   for(let i in response.data.results) {
-                    //console.log(response.data.results[i].word);
-                    this.theWords[idx].push( response.data.results[i].word )
+                    if (this.theWords[idx].indexOf( response.data.results[i].word ) < 0) {
+                      this.theWords[idx].push( response.data.results[i].word )
+                    }
                   }
                   
                   if (this.api_call == this.api_response) {
